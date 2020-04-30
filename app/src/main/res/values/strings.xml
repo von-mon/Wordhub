@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Wordhub</string>
+    <string name="title_word">单词</string>
+    <string name="title_train">训练</string>
+    <string name="title_find">发现</string>
+    <string name="title_center">我</string>
+    <string name="search">查词</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="cancel">取消</string>
+    <string name="calendar">日历</string>
+    <string name="mail">邮件</string>
+    <string name="recite">背单词</string>
+    <string name="realize">认识</string>
+    <string name="uncertain">不确定</string>
+    <string name="unfamiliarity">不认识</string>
+    <string name="username">用户名</string>
+    <string name="userid">用户ID</string>
+    <string name="userimage">用户头像</string>
+    <string name="wordbook">单词本</string>
+    <string name="lexicon">词库</string>
+    <string name="kaoyan">考研词库</string>
+    <string name="option">设置</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_login">登录</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="delete">一键清空</string>
+
+</resources>

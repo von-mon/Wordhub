@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_word">
+
+    <fragment
+        android:id="@+id/navigation_word"
+        android:name="com.example.wordhub.ui.word.WordFragment"
+        android:label="@string/title_word"
+        tools:layout="@layout/fragment_word" />
+
+    <fragment
+        android:id="@+id/navigation_train"
+        android:name="com.example.wordhub.ui.train.TrainFragment"
+        android:label="@string/title_train"
+        tools:layout="@layout/fragment_train" />
+
+    <fragment
+        android:id="@+id/navigation_find"
+        android:name="com.example.wordhub.ui.find.FindFragment"
+        android:label="@string/title_find"
+        tools:layout="@layout/fragment_find" />
+
+    <fragment
+        android:id="@+id/navigation_center"
+        android:name="com.example.wordhub.ui.center.CenterFragment"
+        android:label="@string/title_center"
+        tools:layout="@layout/fragment_center" />
+</navigation>

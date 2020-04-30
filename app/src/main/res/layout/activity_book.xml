@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.word.BookActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/cardview_light_background"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppOverflowMenuStyle"
+        app:title="@string/wordbook"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+        app:titleTextColor="#0B0A0A" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

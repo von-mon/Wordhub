@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.word.WordFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/calendar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/calendar"
+                android:src="@drawable/calendar" />
+
+            <LinearLayout
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/oval"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView_search"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:contentDescription="@string/search"
+                    android:src="@drawable/search" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="39dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:text="@string/search"
+                    android:textColor="#717070"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/mail"
+                android:src="@drawable/mail" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/oval">
+
+            <TextView
+                android:id="@+id/today_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="今日计划"
+                android:textColor="#0C0C0C"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/today_plan"
+                android:layout_alignStart="@id/today_plan"
+                android:layout_marginStart="202dp"
+                android:text="剩余天数"
+                android:textColor="#070707"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/show_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/today_plan"
+                android:layout_alignStart="@id/today_plan"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#0B0A0A"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/show_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/show_plan"
+                android:layout_alignStart="@id/show_plan"
+                android:layout_marginStart="192dp"
+                android:textColor="#090909"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/plan_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show_days"
+                android:layout_alignStart="@id/show_days"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="55dp"
+                android:text="设置计划" />
+
+            <TextView
+                android:id="@+id/lexicon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/plan_set"
+                android:layout_alignStart="@id/today_plan" />
+
+            <ProgressBar
+                android:id="@+id/load_progress"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show_days"
+                android:layout_alignStart="@id/show_plan"
+                android:layout_marginStart="91dp"
+                android:layout_marginTop="5dp" />
+
+            <View
+                android:id="@+id/split_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/plan_set"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="#ACABAB"></View>
+
+            <TextView
+                android:id="@+id/learn_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/split_line"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="学习进度" />
+
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/split_line"
+                android:layout_alignBaseline="@id/learn_progress"
+                android:layout_alignEnd="@id/learn_progress"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="-100dp" />
+
+            <ProgressBar
+                android:id="@+id/show_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progress"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_recite"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/oval"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:text="@string/recite" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
